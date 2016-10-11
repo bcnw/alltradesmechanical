@@ -515,9 +515,9 @@ position: absolute;
 
 /*photo gallery*/
 
-.gallery {
+/*.gallery {
     height: 400px;
-}
+}*/
 
 .thumbnails img {
     height: 80px;
@@ -532,5 +532,5 @@ position: absolute;
 
 .preview img {
     padding: 1px;
-    width: 500px;
+    width: 75%;
 }
