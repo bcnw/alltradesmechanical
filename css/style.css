@@ -50,7 +50,7 @@ p {
     margin-bottom: 20px;
     font-size: 16px;
     letter-spacing: 0.8px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 1.8;
 }
 
@@ -102,7 +102,7 @@ footer {
 .navbar-default .nav > li>a,
 .navbar-default .nav>li>a:focus {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 400;
     letter-spacing: 1.2px;
     color: #222;
 }
@@ -515,10 +515,6 @@ position: absolute;
 
 /*photo gallery*/
 
-/*.gallery {
-    height: 400px;
-}*/
-
 .thumbnails img {
     height: 80px;
     padding: 1px;
@@ -533,4 +529,5 @@ position: absolute;
 .preview img {
     padding: 1px;
     height: 500px;
+    max-width: 100%;
 }
