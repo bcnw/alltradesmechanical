@@ -54,6 +54,13 @@ p {
     line-height: 1.8;
 }
 
+.tagline {
+    color: #fff;
+    background-color: #34007c;
+    line-height: 1.5;
+   /* width: 78%;*/
+}
+
 .bg-primary {
     /*sky blue*/
     background-color: #2980B9;
