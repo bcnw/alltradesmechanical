@@ -133,7 +133,7 @@ footer {
 .navbar-default .nav>li.active>a:focus:hover {
     /*teal*/
     /*background-color: #1497ab;*/
-    border-bottom: medium solid #34007c; 
+    border-bottom: medium solid #34007c;
 }
 
 @media(min-width:768px) {
