@@ -54,14 +54,11 @@ p {
 }
 
 .tagline {
-    color: #fff;
-    background-color: #34007c;
+    color: gray;
     line-height: 1.5;
-   /* width: 78%;*/
 }
 
 .bg-primary {
-    /*sky blue*/
     background-color: #2980B9;
 }
 
@@ -201,6 +198,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #222;
+    background: linear-gradient(#d3c7d5, #fff)
 }
 
 header .header-content {
