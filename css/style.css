@@ -53,12 +53,23 @@ p {
     line-height: 1.8;
 }
 
+/*li {
+    margin-bottom: 20px;
+    font-size: 120px;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    line-height: 1.8;
+}*/
+
 .tagline {
-    color: gray;
+/*    color: #fff;
+    background-color: #34007c;*/
     line-height: 1.5;
+   /* width: 78%;*/
 }
 
 .bg-primary {
+    /*sky blue*/
     background-color: #2980B9;
 }
 
@@ -198,7 +209,6 @@ header {
     min-height: auto;
     text-align: center;
     color: #222;
-    background: linear-gradient(#d3c7d5, #fff)
 }
 
 header .header-content {
@@ -267,6 +277,10 @@ header .header-content .header-content-inner p {
     .service-box {
         margin: 20px auto 0;
     }
+}
+
+.service-box p {
+    margin-bottom: 0;
 }
 
 .text-primary {
@@ -454,7 +468,7 @@ body {
 }
 
 .carousel: {
-    margin-top: 77px;
+/*    margin-top: 77px;*/
     height: 100%;
     margin-bottom: 0px;
     max-width: 1170px;
@@ -472,9 +486,9 @@ body {
     color: #1497ab;
 }
 
-.carousel-indicators {
+/*.carousel-indicators {
   bottom:-50px;
-}
+}*/
 
 .carousel-inner {
    margin-bottom:50px;
@@ -482,7 +496,7 @@ body {
    height: 180px;
 }
 
-.carousel-indicators li {
+/*.carousel-indicators li {
     display: inline-block;
     background-color: rgba(0,0,0,0);
     border: 1px solid #1497ab;
@@ -491,7 +505,7 @@ body {
 
 .carousel-indicators .active {
     background: #1497ab;
-}
+}*/
 
 .slider {
     background: #f0f0f0;
