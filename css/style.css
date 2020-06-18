@@ -162,6 +162,10 @@ footer {
     margin-top: 30px;
 }
 
+/* .contact-row {
+
+} */
+
 @media(min-width:768px) {
     .navbar-default {
         /*transparent*/
@@ -259,6 +263,12 @@ footer {
 
     button.navbar-toggle {
         margin-left: 15px;
+    }
+}
+
+@media(max-width:1024px) {
+    .contact-row {
+        margin-bottom: 40px;
     }
 }
 
