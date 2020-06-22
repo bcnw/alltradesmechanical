@@ -13,7 +13,7 @@ body {
 
 hr {
     max-width: 50px;
-    border-color: #1497ab;
+    border-color: #34007c;
     border-width: 3px;
 }
 
@@ -30,7 +30,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #34007c;
+    color: #1497ab;
     text-decoration: none;
 }
 
