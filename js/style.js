@@ -11,15 +11,15 @@
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - 50)
+            scrollTop: ($($anchor.attr('href')).offset().top - $('#site-nav.navbar-sticky-top .navbar-header').height())
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
-        target: '.navbar-fixed-top',
-        offset: 51
+        target: '#site-nav.navbar-sticky-top',
+        offset: $('#site-nav.navbar-sticky-top .navbar-header').height() + 1,
     })
 
     // Closes the Responsive Menu on Menu Item Click
@@ -34,13 +34,6 @@
             maxFontSize: '65px'
         }
     );
-
-    // Offset for Main Navigation
-    $('#mainNav').affix({
-        offset: {
-            top: 100
-        }
-    })
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
