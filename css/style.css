@@ -1,6 +1,13 @@
 /* purple: #34007c */
 /* teal: #1497ab */
 
+@counter-style up-pointing-triangle {
+    speak-as: bullets;
+    system: cyclic;
+    symbols: "⯅";
+    suffix: " ";
+}
+
 html,
 body {
     width: 100%;
@@ -65,7 +72,44 @@ li {
     /*! color: #fff; */
     /*! background-color: #34007c; */
     line-height: 1.5;
+    font-variant-caps: small-caps;
     /*! width: 78%; */
+    text-wrap: balance;
+}
+
+.tagline ul {
+    list-style-type: up-pointing-triangle;
+}
+.tagline ul > li::marker {
+    color: #34007c;
+}
+
+.inline-list {
+    display: inline;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+}
+.inline-list > li {
+    display: inline flow list-item;
+}
+
+@supports not (wrap-inside: avoid) {
+    .list-avoid-wrap > li {
+        white-space: nowrap;
+    }
+    .list-avoid-wrap > li > span[role="none"] {
+        display: inline-block;
+        white-space: normal;
+        vertical-align: top;
+    }
+}
+@supports (wrap-inside: avoid) {
+    .list-avoid-wrap > li {
+        wrap-inside: avoid;
+    }
+    .list-avoid-wrap > li > span[role="none"] {
+        display: contents;
+    }
 }
 
 .bg-primary {
