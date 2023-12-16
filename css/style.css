@@ -8,6 +8,10 @@
     suffix: " ";
 }
 
+:root {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Lato', 'Source Sans Pro', Helvetica, sans-serif;
 }
