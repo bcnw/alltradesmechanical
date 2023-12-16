@@ -116,7 +116,7 @@ li {
 }
 
 section {
-    padding: 50px 0;
+    margin: 50px 0;
 }
 
 footer {
@@ -259,7 +259,7 @@ footer {
     }
 
     section {
-        padding: 75px 0;
+        margin: 75px 0;
     }
 
     .services-section {
@@ -294,6 +294,10 @@ footer {
 }
 .navbar-sticky-top {
   border-width: 0 0 1px;
+}
+
+.navbar.navbar-sticky-top ~ * {
+    scroll-margin-top: calc(50px + 30px);
 }
 
 @media (min-width: 1024px) {

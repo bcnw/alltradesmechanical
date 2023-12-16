@@ -11,7 +11,7 @@
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
         $('html, body').stop().animate({
-            scrollTop: ($($anchor.attr('href')).offset().top - $('#site-nav.navbar-sticky-top .navbar-header').height())
+            scrollTop: ($($anchor.attr('href')).offset().top - $('#site-nav.navbar-sticky-top .navbar-header').height() - 30)
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
@@ -19,7 +19,7 @@
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '#site-nav.navbar-sticky-top',
-        offset: $('#site-nav.navbar-sticky-top .navbar-header').height() + 1,
+        offset: $('#site-nav.navbar-sticky-top .navbar-header').height() + 30 + 1,
     })
 
     // Closes the Responsive Menu on Menu Item Click
