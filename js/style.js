@@ -7,12 +7,4 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    // Fit Text Plugin for Main Header
-    $("h1").fitText(
-        1.2, {
-            minFontSize: '35px',
-            maxFontSize: '65px'
-        }
-    );
-
 })(jQuery); // End of use strict
