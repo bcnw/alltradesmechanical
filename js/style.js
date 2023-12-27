@@ -7,12 +7,6 @@
 (function($) {
     "use strict"; // Start of use strict
 
-    // Highlight the top nav as scrolling occurs
-    $('body').scrollspy({
-        target: '#site-nav.navbar-sticky-top',
-        offset: $('#site-nav.navbar-sticky-top .navbar-header').height() + 30 + 1,
-    })
-
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a').click(function() {
         $('.navbar-toggle:visible').click();

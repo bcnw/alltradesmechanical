@@ -19,15 +19,24 @@
 
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="js/_hyperscript.min.js"></script>
+    <script type="text/hyperscript">/* <![CDATA */
+        behavior SectionNavIntersectable
+            on intersection(intersecting)
+                tell <#section-nav li [href='#${CSS.escape(my.id)}']/>
+                    add .active to closest parent <li/> when intersecting
+                end
+            end
+        end
+    /* ]]> */</script>
 </head>
 
-<body id="page-top">
+<body>
     <nav id="site-nav" class="navbar navbar-default navbar-sticky-top" title="Site navigation">
         <div class="container-fluid" role="none">
             <div class="navbar-header" role="none">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-nav-collapse-1" style="line-height: 1; font-size: 1lh; padding: 0.25em 0.5ch;" aria-controls="section-nav" title="Toggle section navigation">⋮</button>
-                <a class="navbar-brand brand-full" href="#page-top">All Trades Mechanical</a>
-                <a class="navbar-brand brand-mobile" href="#page-top">ATM</a>
+                <a class="navbar-brand brand-full" href="#">All Trades Mechanical</a>
+                <a class="navbar-brand brand-mobile" href="#">ATM</a>
                 <a href="https://securepayment.link/alltradesmechanical/" class="btn btn-primary pay-button">Pay online</a>
             </div>
 
@@ -55,7 +64,7 @@
         </div>
     </header>
 
-    <section id="about" aria-describedby="about-header" title="About">
+    <section id="about" aria-describedby="about-header" title="About" _="install SectionNavIntersectable">
         <div class="container" role="none">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -104,7 +113,7 @@
         </div>
     </section>
 
-    <section id="services" aria-describedby="services-header" title="Services">
+    <section id="services" aria-describedby="services-header" title="Services" _="install SectionNavIntersectable">
         <div class="container" role="none">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -142,7 +151,7 @@
         </div>
     </section>
 
-    <section id="gallery" aria-describedby="gallery-header" title="Gallery">
+    <section id="gallery" aria-describedby="gallery-header" title="Gallery" _="install SectionNavIntersectable">
         <div class="container" role="none">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -171,7 +180,7 @@
         </div>
     </section>
 
-    <section id="contact" aria-describedby="contact-header" title="Contact">
+    <section id="contact" aria-describedby="contact-header" title="Contact" _="install SectionNavIntersectable">
         <div class="container" role="none">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
