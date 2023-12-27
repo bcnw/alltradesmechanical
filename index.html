@@ -22,9 +22,15 @@
     <script type="text/hyperscript">/* <![CDATA */
         behavior SectionNavIntersectable
             on intersection(intersecting)
-                tell <#section-nav li [href='#${CSS.escape(my.id)}']/>
-                    add .active to closest parent <li/> when intersecting
-                end
+                tell <#section-nav li [href='#${CSS.escape(my.id)}']/> add .active to closest parent <li/> when intersecting
+            end
+        end
+    /* ]]> */</script>
+    <script type="text/hyperscript">/* <![CDATA */
+        behavior WithinCollapsable
+            on click
+                set id to id of closest parent .collapse
+                send click to <[data-toggle='collapse'][data-target='#${CSS.escape(id)}']/>
             end
         end
     /* ]]> */</script>
@@ -42,10 +48,10 @@
 
             <div class="collapse navbar-collapse" id="site-nav-collapse-1" role="none">
                 <menu id="section-nav" class="nav navbar-nav" title="Section navigation">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about" _="install WithinCollapsable">About</a></li>
+                    <li><a href="#services" _="install WithinCollapsable">Services</a></li>
+                    <li><a href="#gallery" _="install WithinCollapsable">Gallery</a></li>
+                    <li><a href="#contact" _="install WithinCollapsable">Contact</a></li>
                 </menu>
             </div>
             <!-- /.navbar-collapse -->
